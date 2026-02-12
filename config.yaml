@@ -1,0 +1,15 @@
+# Не-секретная конфигурация сценария
+# Можно держать под git, секреты лежат только в .env
+
+supercell:
+  game_slug: "brawlstars"  # или clashroyale, если понадобится
+  base_url: "https://store.supercell.com"
+  account_url: "https://store.supercell.com/account"
+
+order:
+  sku_name: "80_gems"      # человеко-читаемое имя
+  # при необходимости здесь же можно хранить ID товара или CSS-селектор
+
+playwright:
+  page_timeout_ms: 30000     # базовый таймаут ожиданий
+  navigation_timeout_ms: 45000
